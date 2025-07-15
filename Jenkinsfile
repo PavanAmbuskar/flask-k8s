@@ -37,7 +37,7 @@ pipeline {
                         # Step 1: Define commands array as a string for inline JSON
                         $cmds = @(
                             "docker pull pavanambuskar/flask-k8s",
-                            "docker rm -f flask || true",
+                            "docker rm -f flask-k8s || true",
                             "docker run -d --name flask -p 80:5000 pavanambuskar/flask-k8s"
                         )
 
