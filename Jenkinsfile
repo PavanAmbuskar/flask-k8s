@@ -38,7 +38,7 @@ pipeline {
                         $cmds = @(
                             "docker pull pavanambuskar/flask-k8s",
                             "docker rm -f flask-k8s || true",
-                            "docker run -d --name flask -p 80:5000 pavanambuskar/flask-k8s"
+                            "docker run -d --name flask-k8s -p 80:5000 pavanambuskar/flask-k8s"
                         )
 
         
